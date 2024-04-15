@@ -7,5 +7,10 @@ def get_phone_path():
     return path
 
 
+def download_file_path():
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), "files")
+    return path
+
+
 if __name__ == '__main__':
     print(get_phone_path())
