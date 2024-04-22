@@ -6,15 +6,13 @@ from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
 driver.maximize_window()
-driver.get('https://www.baidu.com/')
-driver.implicitly_wait(10)
-driver.find_element(By.XPATH, '//*[@id="form"]/span[1]/span[1]').click()
-time.sleep(2)
-driver.find_element(By.XPATH, '//input[@class="upload-pic"]').click()
-time.sleep(2)
-keyboard.send_keys(r"E:\UI-AutoTest\files\01400.jpg")
-time.sleep(5)
-keyboard.send_keys("{ENTER}")
+driver.get('https://sahitest.com/demo/iframesTest.htm')
+driver.find_element(By.ID, 'checkRecord').clear()
+driver.find_element(By.ID, 'checkRecord').send_keys("666")
+time.sleep(3)
+# 使用index
+driver.switch_to.frame(0)
+driver.find_element(By.ID, "open-self").click()
 
 time.sleep(3)
 driver.close()

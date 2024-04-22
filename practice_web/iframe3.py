@@ -4,14 +4,12 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
-driver.get("file://E:/UI-AutoTest/HTML/iframe_test.html")
+driver.get("https://sahitest.com/demo/iframesTest.htm")
 driver.find_element(By.ID, 'checkRecord').clear()
-driver.find_element(By.ID, 'checkRecord').send_keys("777")
+driver.find_element(By.ID, 'checkRecord').send_keys("666")
 time.sleep(3)
-# 使用id定位iframe
-# driver.switch_to.frame("iframe_id")
-# 使用name定位iframe
-driver.switch_to.frame("iframe_name")
-driver.find_element(By.XPATH, "//span[text()='番剧']").click()
+ele = driver.find_element(By.CSS_SELECTOR, 'body > iframe')
+driver.switch_to.frame(ele)
+driver.find_element(By.ID, "open-self").click()
 time.sleep(3)
 driver.close()
