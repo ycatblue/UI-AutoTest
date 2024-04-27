@@ -39,4 +39,4 @@ def element_invisibility():
 
 
 if __name__ == '__main__':
-    element_invisibility()
+    browser_scroll()
