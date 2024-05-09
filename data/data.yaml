@@ -1,0 +1,25 @@
+# 字典形式
+userinfo:
+  username: admin
+  password: 123456
+
+# 数组形式
+skill:
+  - 接口自动化
+  - UI自动化
+  - 性能测试
+
+# 数组嵌字典
+userinfoes:
+  - username: admin
+    password: 123456
+
+# 数组嵌套
+skills:
+    -
+      - 接口自动化
+      - UI自动化
+      - 性能测试
+
+skills2:
+  - [接口自动化, UI自动化, 性能测试]
