@@ -29,4 +29,3 @@ def test_param_dict(driver, data):
     driver.find_element(By.ID, "password").send_keys(data["password"])
     driver.find_element(By.XPATH, "//input[@value='登录']").click()
     time.sleep(2)
-

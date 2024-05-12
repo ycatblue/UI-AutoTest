@@ -16,3 +16,4 @@ def read_yaml():
 if __name__ == '__main__':
     print(read_yaml()["userinfo"]["username"])
     print(read_yaml()["skill"][0])
+    print(read_yaml()["userinfo_list"])

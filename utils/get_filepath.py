@@ -24,5 +24,9 @@ def get_yaml_path():
     return path
 
 
+def get_log_path():
+    path = os.path.realpath(os.path.dirname(os.path.dirname(os.path.realpath(__file__)) ), "log.txt")
+
+
 if __name__ == '__main__':
     print(get_screen_shot_path())

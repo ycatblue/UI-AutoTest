@@ -10,8 +10,10 @@ skill:
   - 性能测试
 
 # 数组嵌字典
-userinfoes:
+userinfos:
   - username: admin
+    password: 123456
+  - username: test01
     password: 123456
 
 # 数组嵌套
@@ -23,3 +25,7 @@ skills:
 
 skills2:
   - [接口自动化, UI自动化, 性能测试]
+
+userinfo_list:
+  - [admin, 123456]
+  - [test01, 123456]
